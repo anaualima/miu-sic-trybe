@@ -20,7 +20,7 @@ export default class Login extends Component {
 
   onInputChange({ target }) {
     const { name, value } = target;
-    this.setState({ [name]: value }, this.enableButton);
+    this.setState({ [name]: value }, this.enableButton); // Chama ao função, ao mesmo tempo que recebe o input ativa o botão;
   }
 
   enableButton() {
