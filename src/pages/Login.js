@@ -61,6 +61,7 @@ export default class Login extends Component {
             <label htmlFor="name">
               Nome:
               <input
+                type="text"
                 id="name"
                 name="name"
                 value={ name }
