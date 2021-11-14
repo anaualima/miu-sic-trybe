@@ -49,7 +49,7 @@ export default class Search extends Component {
       logged: false,
       searchArtist: '',
       reponseArr: response,
-      responseArtist: searchArtist,
+      responseArtist: searchArtist, // precisa da resposta do nome de um artista válido;
     });
   }
 
@@ -60,14 +60,6 @@ export default class Search extends Component {
       logged,
       reponseArr,
       responseArtist,
-      // artistId,
-      // artistName,
-      // collectionId,
-      // collectionName,
-      // collectionPrice,
-      // artworkUrl100,
-      // releaseDate,
-      // trackCount,
     } = this.state;
     if (logged) return <Loading />;
     return (
