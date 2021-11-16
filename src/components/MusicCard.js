@@ -9,14 +9,20 @@ export default class MusicCard extends Component {
     } = this.props;
     return (
       <div>
-        <li>{ trackName }</li>
-        <span>{ previewUrl }</span>
+        <p>{trackName}</p>
+        <audio data-testid="audio-component" src={ previewUrl } controls>
+          <track kind="captions" />
+          O seu navegador não suporta o elemento
+          {' '}
+          <code>audio</code>
+          .
+        </audio>
       </div>
     );
   }
 }
 
 MusicCard.propTypes = {
-  trackName: PropTypes.shape.isRequired,
-  previewUrl: PropTypes.shape.isRequired,
+  trackName: PropTypes.string.isRequired,
+  previewUrl: PropTypes.string.isRequired,
 };
