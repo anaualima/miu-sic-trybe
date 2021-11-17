@@ -40,9 +40,10 @@ export default class Album extends Component {
     const { responseArr } = this.state;
     return responseArr
       .filter((m) => m.trackName && m.previewUrl)
-      .map((u) => (
+      .map((u, i) => (
         <MusicCard
-          key={ u.trackName }
+          key={ i }
+          trackId={ u.trackId }
           trackName={ u.trackName }
           previewUrl={ u.previewUrl }
         />));
