@@ -55,9 +55,19 @@ input, button {
 }
 
 .header, p {
-  color:black;
   font-weight: 800;
   font-size: larger;
+}
+
+.link {
+  text-decoration: none;
+  margin-top: 22px;
+}
+
+.container-nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-seacrh {

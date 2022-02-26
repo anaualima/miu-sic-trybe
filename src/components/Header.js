@@ -37,7 +37,7 @@ export default class Header extends Component {
     return (
       <header data-testid="header-component" className="header">
         <p data-testid="header-user-name">{ name }</p>
-        <nav>
+        <nav className="container-nav">
           <Link
             to="/search"
             data-testid="link-to-search"
