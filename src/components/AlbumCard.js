@@ -9,21 +9,15 @@ export default class AlbumCard extends Component {
       artistName,
       collectionId,
       collectionName,
-      collectionPrice,
       artworkUrl100,
-      releaseDate,
-      trackCount,
     } = this.props;
 
     // recebe o id feito no requisito 7, a função getMusics pega o id;
     // que está na propriedade macth(params) do state, e encaixa no link;
     return (
       <div key={ artistId } className="album-card">
-        <p>{ artistId }</p>
         <h3>{ artistName }</h3>
-        <p>{ collectionId }</p>
         <p>{ collectionName }</p>
-        <p>{ collectionPrice }</p>
         <Link
           to={ `album/${collectionId}` }
           data-testid={ `link-to-album-${collectionId}` }
@@ -31,8 +25,6 @@ export default class AlbumCard extends Component {
           { artistName }
         </Link>
         <img src={ artworkUrl100 } alt={ artistName } />
-        <p>{releaseDate}</p>
-        <p>{trackCount}</p>
       </div>
     );
   }
