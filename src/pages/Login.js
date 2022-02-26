@@ -2,6 +2,7 @@ import { Redirect } from 'react-router-dom';
 import React, { Component } from 'react';
 import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
+import miusic from '../images/miusic.png';
 
 export default class Login extends Component {
   constructor() {
@@ -57,7 +58,10 @@ export default class Login extends Component {
     return (
       logged ? (<Loading />) : (
         <div data-testid="page-login">
-          <form>
+           <link rel="preconnect" href="https://fonts.googleapis.com"/>
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+           <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100&display=swap" rel="stylesheet"/>
+          <form className="container-form">
             <label htmlFor="name">
               Nome:
               <input
@@ -80,7 +84,7 @@ export default class Login extends Component {
             </button>
           </form>
           <div className="container-image">
-            <img src="https://i.pinimg.com/564x/f2/57/20/f25720a4e84e003c9469b368f84cec5e.jpg" alt="blackcat" className="image" />
+            <img src={ miusic } alt="blackcat" className="image" />
           </div>
         </div>)
     );

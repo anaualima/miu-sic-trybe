@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import { getUser } from '../services/userAPI';
 import Loading from './Loading';
+import imgcabecalho from '../images/imgcabecalho.png';
 
 export default class Header extends Component {
   constructor() {
@@ -35,7 +36,6 @@ export default class Header extends Component {
     if (logged) return <Loading />;
     return (
       <header data-testid="header-component" className="header">
-        <h1>Miu!sic</h1>
         <p data-testid="header-user-name">{ name }</p>
         <nav>
           <Link
@@ -60,6 +60,7 @@ export default class Header extends Component {
             Profile
           </Link>
         </nav>
+        <img src={ imgcabecalho } alt="logomarca com gato" className="img-cabecalho"/>
       </header>
     );
   }

@@ -1,7 +1,8 @@
 body {
+  margin: 0;
   background-color: #384152;
   color: rgb(233, 233, 233);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container-image {
@@ -10,8 +11,34 @@ body {
  flex-direction: column;
 }
 
-.image {
+.container-form {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
+  padding: 20px 25px;
+  justify-content: space-between;
+  width: 21%;
+}
+
+label {
+  color:antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+input, button {
+  padding: 5px;
   border-radius: 5%;
+  background-color: #7d838f;
+}
+
+.img-cabecalho {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.image {
+  width: 800px;
 }
 
 .link {
@@ -19,18 +46,29 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: #8C3030;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 2% ;
+  width: 100%;
+  float: left;
+  padding: 2px 1%;
+}
+
+.header, p {
+  color:black;
+  font-weight: 800;
+  font-size: larger;
 }
 
 .container-seacrh {
   display: flex;
-  width: 500px;
+  width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 108px;
 }
 
 .album-card {

@@ -89,18 +89,18 @@ export default class Search extends Component {
         <h3>{`Resultado de álbuns de: ${responseArtist}`}</h3>
         <section className="container-seacrh">
           { reponseArr.length === 0 ? <p>Nenhum álbum foi encontrado</p>
-            : reponseArr.map((a) => (
-              <AlbumCard
-                key={ a.artistId }
-                artistId={ a.artistId }
-                artistName={ a.artistName }
-                collectionId={ a.collectionId }
-                collectionName={ a.collectionName }
-                collectionPrice={ a.collectionPrice }
-                artworkUrl100={ a.artworkUrl100 }
-                releaseDate={ a.releaseDate }
-                trackCount={ a.trackCount }
-              />
+                :reponseArr.map((a) => (
+                <AlbumCard
+                  key={ a.artistId }
+                  artistId={ a.artistId }
+                  artistName={ a.artistName }
+                  collectionId={ a.collectionId }
+                  collectionName={ a.collectionName }
+                  collectionPrice={ a.collectionPrice }
+                  artworkUrl100={ a.artworkUrl100 }
+                  releaseDate={ a.releaseDate }
+                  trackCount={ a.trackCount }
+                />
             ))}
         </section>
       </div>
