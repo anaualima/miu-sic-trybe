@@ -39,7 +39,7 @@ export default class Album extends Component {
   musics() {
     const { responseArr } = this.state;
     return responseArr
-    // esse filter serve para pegar as musicas válidas, as que realmente tem o trackName e o trackId;
+    // esse filter serve para pegar as musicas válidas, as que realmente tem o trackName e o preview;
     // Auxílio do colega Gabriel Fontes;
       .filter((m) => m.trackName && m.previewUrl)
       .map((u, i) => (

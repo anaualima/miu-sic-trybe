@@ -15,8 +15,10 @@ export default class AlbumCard extends Component {
       trackCount,
     } = this.props;
 
+    // recebe o id feito no requisito 7, a função getMusics pega o id;
+    // que está na propriedade macth(params) do state, e encaixa no link;
     return (
-      <div key={ artistId }>
+      <div key={ artistId } className="album-card">
         <p>{ artistId }</p>
         <h3>{ artistName }</h3>
         <p>{ collectionId }</p>

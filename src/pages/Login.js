@@ -79,6 +79,9 @@ export default class Login extends Component {
               Entrar
             </button>
           </form>
+          <div className="container-image">
+            <img src="https://i.pinimg.com/564x/f2/57/20/f25720a4e84e003c9469b368f84cec5e.jpg" alt="blackcat" className="image" />
+          </div>
         </div>)
     );
   }
